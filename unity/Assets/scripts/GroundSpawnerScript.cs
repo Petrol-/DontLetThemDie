@@ -2,8 +2,8 @@
 using System.Collections;
 
 public class GroundSpawnerScript : MonoBehaviour {
-
-    float positionX;
+	public Transform target;
+	float positionX;
     int count;
     public GameObject ground;
 	void Start () {
@@ -13,8 +13,8 @@ public class GroundSpawnerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        positionX = gameObject.transform.position.x;
-        float value = Mathf.FloorToInt(positionX / 100);
+        positionX = target.transform.position.x;
+        float value = Mathf.FloorToInt(positionX / 50);
         if (value != count && value > 0)
         {
             count++;
@@ -25,7 +25,7 @@ public class GroundSpawnerScript : MonoBehaviour {
 
     private void Spawn()
     {
-        Instantiate(ground, new Vector3(100.0f * (count+1f), 0f, 0f), Quaternion.identity);
+        Instantiate(ground, new Vector3(50 * (count+1f), transform.position.y, 0f), Quaternion.identity);
         
     }
 }

@@ -2,40 +2,38 @@
 using System.Collections;
 
 public class JumpScript : MonoBehaviour {
-    [Range(0,100)]
-    public float jumpVelocity;
+
     public Rigidbody2D character;
     public LayerMask whatIsGround;
+    public LayerMask detectionLayer;
     public Transform groundCheck;
-    [Range(0,1)]
-    public float width, height;
-    public EnumScreenCorners dock;
-    DetectionWindow winChar;
 
-        
-    void Start()
-    {
-        winChar = new DetectionWindow(width, height / 2, dock);
-        
-    }
+	//Run speed so the jump does not disturb the x speed
+	private float runSpeed;
+
     void Awake()
     {
         groundCheck = transform.Find("GroundCheck");
+		RunControllerPrefs prefs = GameObject.FindObjectOfType<RunControllerPrefs> ();
+		runSpeed = prefs.runSpeed;
+		prefs = null;
     }
-    void Update()
+    
+  public  void Jump(float jumpVelocity)
     {
-        bool grounded = Physics2D.Linecast(transform.position, groundCheck.position, whatIsGround);
-        if (Input.touchCount > 0 && grounded)
-        {
-            foreach(Touch touch in Input.touches){
-                if(winChar.isTouchInsideWindow(touch)){
-                    Jump(character);
-                }
-            }
-        }
+		character.velocity = new Vector2(runSpeed, jumpVelocity);
     }
 
-    void Jump(Rigidbody2D c){
-        c.velocity = new Vector2(c.velocity.x, jumpVelocity);
-}
+  public bool isGrounded()
+  {
+
+      return (Physics2D.Linecast(transform.position, groundCheck.position, whatIsGround));
+  }
+
+  public bool isBeingTouched(Touch touch)
+  {
+      Vector3 touchPos = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 0));
+      return Physics2D.Linecast(touchPos, touchPos,detectionLayer);
+      
+  }
 }
