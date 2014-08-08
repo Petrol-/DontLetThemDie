@@ -48,6 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\Editor\BMFontReader.cs" />
      <Compile Include="Assets\Editor\ComponentSelector.cs" />
+     <Compile Include="Assets\Editor\GPGSAndroidSetupUI.cs" />
+     <Compile Include="Assets\Editor\GPGSDocsUI.cs" />
+     <Compile Include="Assets\Editor\GPGSIOSSetupUI.cs" />
+     <Compile Include="Assets\Editor\GPGSProjectSettings.cs" />
+     <Compile Include="Assets\Editor\GPGSStrings.cs" />
+     <Compile Include="Assets\Editor\GPGSUpgrader.cs" />
+     <Compile Include="Assets\Editor\GPGSUtil.cs" />
      <Compile Include="Assets\Editor\NGUIEditorTools.cs" />
      <Compile Include="Assets\Editor\NGUIJson.cs" />
      <Compile Include="Assets\Editor\NGUIMenu.cs" />
@@ -80,28 +87,6 @@
      <Compile Include="Assets\Editor\UIWidgetInspector.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\FacebookPostprocess.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\FacebookSettingsEditor.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\android\FacebookAndroidUtil.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\android\ManifestMod.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\FixupFiles.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\PlistMod.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXBuildFile.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXBuildPhase.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXDictionary.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXFileReference.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXGroup.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXList.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXObject.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXParser.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\PBXProject.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCBuildConfiguration.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCConfigurationList.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCFileOperationQueue.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCMod.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCProject.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCSourceFile.cs" />
-     <Compile Include="Assets\Ultimate GUI Kit\Facebook\Editor\iOS\third_party\XCodeEditor-for-Unity\XCTarget.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
@@ -109,17 +94,20 @@
      <None Include="Assets\NGUI\Resources\Shaders\GUI - Text Shader (SoftClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\Editor\projsettings.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\Editor\template-AndroidManifest.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\AndroidManifest.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\GUI - Text Shader (AlphaClip).shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
-     <None Include="Assets\Ultimate GUI Kit\HOTweenMicro\HOTween_License.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
      <None Include="Assets\fonts\komokakx.fnt" />
+     <None Include="Assets\Editor\template-GPGSParams.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
@@ -128,6 +116,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
      <None Include="Assets\NGUI\Examples\Other\English.txt" />
      <None Include="Assets\NGUI\Examples\Other\French.txt" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\res\values\gamehelper_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
@@ -135,16 +124,9 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
-     <None Include="Assets\Ultimate GUI Kit\Fonts\lemon.fnt" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
- <Reference Include="IFacebook">
- <HintPath>F:/dev/git/DontLetThemDie/unity/Assets/Ultimate GUI Kit/Facebook/Scripts/IFacebook.dll</HintPath>
- </Reference>
- <Reference Include="HOTween">
- <HintPath>F:/dev/git/DontLetThemDie/unity/Assets/Ultimate GUI Kit/HOTweenMicro/HOTween.dll</HintPath>
- </Reference>
- <Reference Include="HOTweenV1_Editor">
- <HintPath>F:/dev/git/DontLetThemDie/unity/Assets/Ultimate GUI Kit/HOTweenMicro/Editor/HOTweenV1_Editor.dll</HintPath>
+ <Reference Include="GPGSUtils">
+ <HintPath>F:/dev/git/DontLetThemDie/unity/Assets/Plugins/GPGSUtils.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

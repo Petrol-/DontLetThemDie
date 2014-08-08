@@ -1,17 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Scripts\UI\UIAnchor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\RetrieveBestScore.cs">
     <Files>
-      <File FileName="Assets\GameController.cs" Line="34" Column="24" />
-      <File FileName="Assets\EndWhenCollideWithObstacle.cs" Line="15" Column="29" />
-      <File FileName="Assets\DetectFirstTouh.cs" Line="1" Column="1" />
-      <File FileName="Assets\TimerUpdater.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Scripts\UI\UIFont.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Scripts\UI\UIFont.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\GameController.cs" Line="1" Column="1" />
       <File FileName="Assets\scripts\RunControllerPrefs.cs" Line="1" Column="1" />
-      <File FileName="Assets\Gamecontroller.cs" Line="32" Column="26" />
       <File FileName="Assets\scripts\RunScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\ObstacleSpawner.cs" Line="45" Column="3" />
-      <File FileName="Assets\CameraScriptFollowXandAlign.cs" Line="27" Column="3" />
-      <File FileName="Assets\NGUI\Scripts\UI\UIAnchor.cs" Line="207" Column="1" />
+      <File FileName="Assets\scripts\ObstacleSpawner.cs" Line="1" Column="1" />
+      <File FileName="Assets\NGUI\Scripts\Interaction\UIImageButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\SoundButton.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\TimerUpdater.cs" Line="1" Column="1" />
+      <File FileName="Assets\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\LevelSelector.cs" Line="1" Column="1" />
+      <File FileName="Assets\RetrieveBestScore.cs" Line="7" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
