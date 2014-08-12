@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
+/// <summary>
+/// Level selector.
+/// When calling one of these methods, load the appropriate level.
+/// </summary>
 public class LevelSelector : MonoBehaviour {
 
 	public void Easy(){

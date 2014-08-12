@@ -15,7 +15,7 @@ public class CameraScriptFollowXandAlign : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
+	void LateUpdate () {
 
 		transform.position = new Vector3 (targetToFollow.transform.position.x-offset,transform.position.y,z);
 	}

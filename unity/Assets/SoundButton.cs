@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public delegate void SoundOnOff();
+
 public class SoundButton : MonoBehaviour {
 
 	private UISprite iSound;
 	private bool soundEnabled;
-
+	public event SoundOnOff soundSettingsChanged;
 	void Awake(){
 		iSound = GetComponent<UISprite> ();
 		int sound = PlayerPrefs.GetInt ("Sound", 1);
@@ -23,6 +25,9 @@ public class SoundButton : MonoBehaviour {
 		soundEnabled = !soundEnabled;
 		PlayerPrefs.SetInt ("Sound", soundEnabled ? 1 : 0);
 		ToogleSprite ();
+		if (soundSettingsChanged != null) {
+						soundSettingsChanged ();
+				}
 		}
 
 	private void ToogleSprite(){
