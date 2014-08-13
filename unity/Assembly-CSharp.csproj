@@ -46,8 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\AdManager.cs" />
-     <Compile Include="Assets\AudioManager.cs" />
      <Compile Include="Assets\GoogleMobileAds\Api\AdFailedToLoadEventArgs.cs" />
      <Compile Include="Assets\GoogleMobileAds\Api\AdPosition.cs" />
      <Compile Include="Assets\GoogleMobileAds\Api\AdRequest.cs" />
@@ -104,10 +102,6 @@
      <Compile Include="Assets\GooglePlayGames\Platforms\iOS\MonoPInvokeCallbackAttribute.cs" />
      <Compile Include="Assets\GooglePlayGames\Platforms\iOS\iOSTbmpClient.cs" />
      <Compile Include="Assets\GooglePlayGames\PluginVersion.cs" />
-     <Compile Include="Assets\LevelBackButtonAndroid.cs" />
-     <Compile Include="Assets\LevelSelector.cs" />
-     <Compile Include="Assets\MainScreenBackButton_ANDDROID.cs" />
-     <Compile Include="Assets\MessageButtonFix.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -226,28 +220,34 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-     <Compile Include="Assets\RetrieveBestScore.cs" />
-     <Compile Include="Assets\ScoreManager.cs" />
-     <Compile Include="Assets\SocialServicesScript.cs" />
-     <Compile Include="Assets\SoundButton.cs" />
      <Compile Include="Assets\classes\DetectionWindow.cs" />
      <Compile Include="Assets\classes\EnumLeaderBoard.cs" />
      <Compile Include="Assets\classes\EnumScreenCorners.cs" />
+     <Compile Include="Assets\scripts\AdManager.cs" />
+     <Compile Include="Assets\scripts\AudioManager.cs" />
      <Compile Include="Assets\scripts\CameraScriptFollowXandAlign.cs" />
      <Compile Include="Assets\scripts\DestroyerScript.cs" />
      <Compile Include="Assets\scripts\EndWhenCollideWithObstacle.cs" />
      <Compile Include="Assets\scripts\FollowX.cs" />
-     <Compile Include="Assets\scripts\GUIScaler.cs" />
      <Compile Include="Assets\scripts\GameController.cs" />
      <Compile Include="Assets\scripts\GroundSpawnerScript.cs" />
      <Compile Include="Assets\scripts\JumpControllerScript.cs" />
      <Compile Include="Assets\scripts\JumpScript.cs" />
+     <Compile Include="Assets\scripts\LevelBackButtonAndroid.cs" />
+     <Compile Include="Assets\scripts\LevelSelector.cs" />
+     <Compile Include="Assets\scripts\MainScreenBackButton_ANDDROID.cs" />
+     <Compile Include="Assets\scripts\MessageButtonFix.cs" />
      <Compile Include="Assets\scripts\ObstacleSpawner.cs" />
      <Compile Include="Assets\scripts\ObstacleSpawnerPrefs.cs" />
      <Compile Include="Assets\scripts\ObstacleSpawnerScript.cs" />
+     <Compile Include="Assets\scripts\RetrieveBestScore.cs" />
      <Compile Include="Assets\scripts\RunControllerPrefs.cs" />
      <Compile Include="Assets\scripts\RunScript.cs" />
+     <Compile Include="Assets\scripts\ScoreManager.cs" />
+     <Compile Include="Assets\scripts\SocialServicesScript.cs" />
+     <Compile Include="Assets\scripts\SoundButton.cs" />
      <Compile Include="Assets\scripts\TimerUpdater.cs" />
+     <Compile Include="Assets\test.cs" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />

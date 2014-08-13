@@ -35,7 +35,7 @@ public class ObstacleSpawnerScript : MonoBehaviour {
     void SpawnObstacle()
     {
         Instantiate(obstacles[Random.Range(0, obstacles.Length - 1)], new Vector3(getRandomFloat(maxRdmDist) +(count+1)*fixedDist, transform.position.y, 0), Quaternion.identity);
-		Debug.Log ("Next Obstacle " + getRandomFloat (maxRdmDist) + (count + 1) * fixedDist);
+		//Debug.Log ("Next Obstacle " + getRandomFloat (maxRdmDist) + (count + 1) * fixedDist);
     }
     float getRandomFloat(float minMaxFloat)
     {

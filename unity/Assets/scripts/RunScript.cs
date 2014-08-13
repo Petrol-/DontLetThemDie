@@ -20,11 +20,7 @@ public class RunScript : MonoBehaviour {
 
     void Update()
     {
-		if(canRun)
-     		character.velocity = new Vector2(speed, character.velocity.y);
-
-		if (Input.GetKeyDown (KeyCode.Escape)) { 
-			//Application.Quit();
-				}
+		if (canRun)
+						character.velocity = new Vector2 (speed, character.velocity.y);
     }
 }
