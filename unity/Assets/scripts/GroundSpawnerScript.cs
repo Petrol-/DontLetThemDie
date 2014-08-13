@@ -9,6 +9,7 @@ public class GroundSpawnerScript : MonoBehaviour {
 	void Start () {
         
         count = 0;
+		ground.CreatePool (3);
 	}
 	
 	// Update is called once per frame
@@ -25,7 +26,8 @@ public class GroundSpawnerScript : MonoBehaviour {
 
     private void Spawn()
     {
-        Instantiate(ground, new Vector3(50 * (count+1f), transform.position.y, 0f), Quaternion.identity);
+		ground.Spawn (new Vector3 (50 * (count + 1f), transform.position.y, 0f), Quaternion.identity);
+        //Instantiate(ground, new Vector3(50 * (count+1f), transform.position.y, 0f), Quaternion.identity);
         
     }
 }

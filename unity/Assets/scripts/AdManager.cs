@@ -57,6 +57,7 @@ public class AdManager : MonoBehaviour {
 		if (_interstitial.IsLoaded())
 		{
 			_interstitial.Show();
+			PlayerPrefs.SetInt("RetryCounter",0);
 		}
 		else
 		{

@@ -18,9 +18,8 @@ public class GameController : MonoBehaviour {
 		scoreManager = GetComponent<ScoreManager> ();
 		adManager = GetComponent<AdManager> ();
 		audioManager = AudioManager.instance;
-
-
 	}
+
 	public void FirstTouch(){
 
 		if (!_startTouch) {

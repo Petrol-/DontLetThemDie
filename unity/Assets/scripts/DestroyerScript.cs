@@ -3,8 +3,11 @@ using System.Collections;
 
 public class DestroyerScript : MonoBehaviour {
 
-    void OnTriggerEnter2D(Collider2D obj)
+	public string tagToDestroy;
+	void OnTriggerEnter2D(Collider2D obj)
     {
-        Destroy(obj.gameObject);
+		if (obj.tag == tagToDestroy)
+		//  Destroy(obj.gameObject);
+		obj.Recycle ();
     }
 }

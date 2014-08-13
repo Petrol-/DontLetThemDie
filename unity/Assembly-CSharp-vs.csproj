@@ -220,6 +220,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\ObjectPool\Scripts\ObjectPool.cs" />
      <Compile Include="Assets\classes\DetectionWindow.cs" />
      <Compile Include="Assets\classes\EnumLeaderBoard.cs" />
      <Compile Include="Assets\classes\EnumScreenCorners.cs" />
@@ -247,7 +248,6 @@
      <Compile Include="Assets\scripts\SocialServicesScript.cs" />
      <Compile Include="Assets\scripts\SoundButton.cs" />
      <Compile Include="Assets\scripts\TimerUpdater.cs" />
-     <Compile Include="Assets\test.cs" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-el\common_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\common_strings.xml" />

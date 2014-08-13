@@ -18,7 +18,10 @@ public class ObstacleSpawnerScript : MonoBehaviour {
 		prefs = null;
         count = 0;
 		lastValue = 0;
-        Instantiate(obstacles[Random.Range(0, obstacles.Length - 1)], new Vector3(getRandomFloat(maxRdmDist) + transform.position.x, transform.position.y, 0f), Quaternion.identity);
+		foreach (GameObject obj in obstacles) {
+			obj.CreatePool(3);
+				}
+       // Instantiate(obstacles[Random.Range(0, obstacles.Length - 1)], new Vector3(getRandomFloat(maxRdmDist) + transform.position.x, transform.position.y, 0f), Quaternion.identity);
  		
 	}
 
@@ -34,7 +37,8 @@ public class ObstacleSpawnerScript : MonoBehaviour {
 
     void SpawnObstacle()
     {
-        Instantiate(obstacles[Random.Range(0, obstacles.Length - 1)], new Vector3(getRandomFloat(maxRdmDist) +(count+1)*fixedDist, transform.position.y, 0), Quaternion.identity);
+        //Instantiate(obstacles[Random.Range(0, obstacles.Length - 1)], new Vector3(getRandomFloat(maxRdmDist) +(count+1)*fixedDist, transform.position.y, 0), Quaternion.identity);
+		obstacles[Random.Range(0,obstacles.Length-1)].Spawn(new Vector3(getRandomFloat(maxRdmDist) +(count+1)*fixedDist, transform.position.y, 0), Quaternion.identity);
 		//Debug.Log ("Next Obstacle " + getRandomFloat (maxRdmDist) + (count + 1) * fixedDist);
     }
     float getRandomFloat(float minMaxFloat)

@@ -1,13 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\AdManager.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\ObstacleSpawnerScript.cs">
     <Files>
-      <File FileName="Assets\scripts\SocialServicesScript.cs" Line="178" Column="4" />
+      <File FileName="Assets\scripts\GroundSpawnerScript.cs" Line="30" Column="11" />
+      <File FileName="Assets\scripts\GameController.cs" Line="34" Column="11" />
+      <File FileName="Assets\scripts\ObstacleSpawnerScript.cs" Line="22" Column="20" />
+      <File FileName="Assets\scripts\DestroyerScript.cs" Line="9" Column="30" />
+      <File FileName="Assets\scripts\AdManager.cs" Line="60" Column="25" />
       <File FileName="Assets\scripts\AudioManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\AdManager.cs" Line="39" Column="17" />
-      <File FileName="Assets\scripts\FollowX.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\JumpScript.cs" Line="31" Column="4" />
-      <File FileName="Assets\test.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\RunScript.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
