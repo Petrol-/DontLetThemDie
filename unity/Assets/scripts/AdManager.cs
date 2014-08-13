@@ -36,7 +36,6 @@ public class AdManager : MonoBehaviour {
 		// Register for ad events.
 		_interstitial.AdClosed += HandleInterstitialClosed;
 		_interstitial.AdLeftApplication += HandleInterstitialLeftApplication;
-		_interstitial.
 		// Load an interstitial ad.
 		_interstitial.LoadAd(createAdRequest());
 	}
