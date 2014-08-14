@@ -8,7 +8,8 @@ public class CameraScriptFollowXandAlign : MonoBehaviour {
 	public float z;
 	public float offsetToBorder;
 	private float offset;
-
+	private Vector3 velocity;
+	public float dampTime;
 	void Start ()
 	{
 		CalcOffset ();
@@ -16,9 +17,10 @@ public class CameraScriptFollowXandAlign : MonoBehaviour {
 
 	// Update is called once per frame
 	void LateUpdate() {
-
-		transform.position = new Vector3 ((targetToFollow.transform.position.x-offset),transform.position.y,z);
+		Vector3 destination = new Vector3 ((targetToFollow.transform.position.x-offset),transform.position.y,z);
+		transform.position=Vector3.SmoothDamp(transform.position,destination,ref velocity,dampTime);
 	}
+
 
 	float CalcOffset()
 	{

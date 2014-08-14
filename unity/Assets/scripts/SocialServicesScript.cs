@@ -71,8 +71,6 @@ public class SocialServicesScript : MonoBehaviour {
 		//If the users has clicked the leaderboard button and succesfully connected Once.
 		//Debug.LogWarning ("Awake() SignedPlayServices : "+PlayerPrefs.GetInt("SignedPlayServices",0));
 		if(PlayerPrefs.GetInt("SignedPlayServices",0) == 1){
-			// recommended for debugging:
-
 			Login();
 			}
 		}
@@ -92,7 +90,9 @@ public class SocialServicesScript : MonoBehaviour {
 		{
 						//if (!leaderBoardShowing) {
 								//leaderBoardShowing = true;
+
 								Social.ShowLeaderboardUI ();
+
 								//StartCoroutine (DontCatchTwiceTheButton (EnumGoogleUI.LEADERBOARD, 0.8f));		
 						//}
 				}
@@ -129,6 +129,14 @@ public class SocialServicesScript : MonoBehaviour {
 			PostTimeToLeaderBoard(times[i-2],i);
 				}
 
+		}
+
+	void PostAchievments(){
+		Social.ReportProgress ("CgkImOzDqv8FEAIQAQ", 100.0f, (bool success) => {});
+		Social.ReportProgress ("CgkImOzDqv8FEAIQAg", 100.0f, (bool success) => {});
+		Social.ReportProgress ("CgkImOzDqv8FEAIQAw", 100.0f, (bool success) => {});
+		Social.ReportProgress ("CgkImOzDqv8FEAIQBA", 100.0f, (bool success) => {});
+		Social.ReportProgress ("CgkImOzDqv8FEAIQBQ", 100.0f, (bool success) => {});
 		}
 	private void AttemptFirstLogin(){
 //		Debug.LogWarning ("First logging attempt");

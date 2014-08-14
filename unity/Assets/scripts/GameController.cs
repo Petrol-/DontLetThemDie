@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour {
 	private AudioManager audioManager;
 	 void Awake()
 	{
+		Application.targetFrameRate = 60;
 		Time.timeScale = 0.0f;
 		_startTouch = false;
 		scoreManager = GetComponent<ScoreManager> ();

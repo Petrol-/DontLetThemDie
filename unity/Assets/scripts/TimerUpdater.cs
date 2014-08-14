@@ -4,15 +4,17 @@ using System.Collections;
 
 public class TimerUpdater : MonoBehaviour {
 
-	private UILabel Ltimer;
+	public UILabel LTimerFracts, LTimerSec, LTimerMin;
 	private float time;
 	public bool canCount;
 	private string sTime;
 	// Use this for initialization
 	void Start () {
 
-		Ltimer = GetComponent<UILabel> ();
-		Ltimer.text = "0\"00";
+		//LTimerFracts = GetComponent<UILabel> ();
+		LTimerFracts.text = "00";
+		LTimerSec.text = "00\" ";
+		LTimerMin.text = "";
 		time = 0.00f;
 		sTime = "";
 		canCount = false;
@@ -34,11 +36,18 @@ public class TimerUpdater : MonoBehaviour {
 		cent = (int)Mathf.Clamp((time % 1)*100,0,99);
 
 		if (min == 0) {
-			Ltimer.text= sTime = sec.ToString("00")+"\" "+cent.ToString("00");
+			//Ltimer.text= sTime = sec.ToString("00")+"\" "+cent.ToString("00");
+			sTime = sec.ToString("00")+"\" "+cent.ToString("00");
+			LTimerFracts.text = cent.ToString("00");
+			LTimerSec.text = sec.ToString("00")+"\" ";
 			return;
 				}
-		Ltimer.text= sTime = min+"' "+sec.ToString("00")+"\" "+cent.ToString("00");
-		
+		//Ltimer.text= sTime = min+"' "+sec.ToString("00")+"\" "+cent.ToString("00");
+		sTime = min+"' "+sec.ToString("00")+"\" "+cent.ToString("00");
+
+		LTimerFracts.text = cent.ToString("00");
+		LTimerSec.text = sec.ToString("00")+"\" ";
+		LTimerMin.text = min + "' ";
 	}
 
 	public string GetTime(){ return sTime; }

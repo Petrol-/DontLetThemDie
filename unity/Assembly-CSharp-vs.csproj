@@ -221,6 +221,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\ObjectPool\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\SmoothFollow2DYLocked.cs" />
      <Compile Include="Assets\classes\DetectionWindow.cs" />
      <Compile Include="Assets\classes\EnumLeaderBoard.cs" />
      <Compile Include="Assets\classes\EnumScreenCorners.cs" />
