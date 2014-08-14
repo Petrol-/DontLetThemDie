@@ -1,2 +1,0 @@
-﻿
-public enum EnumScreenCorners {UPPERLEFT, UPPERRIGHT, BOTTOMLEFT, BOTTOMRIGHT, NONE};

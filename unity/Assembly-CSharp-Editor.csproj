@@ -106,6 +106,7 @@
      <None Include="Assets\NGUI\Resources\Shaders\GUI - Text Shader (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-nl\common_strings.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-am\common_strings.xml" />
+     <None Include="Assets\sprites\icons\LICENSE.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-es\wallet_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
@@ -146,6 +147,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-bg\common_strings.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-it\common_strings.xml" />
+     <None Include="Assets\Audio\Rollin at 5.LICENSE.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-pl\common_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-sk\common_strings.xml" />
@@ -199,6 +201,7 @@
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-km-rKH\common_strings.xml" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values\admob_iap_style.xml" />
+     <None Include="Assets\ObjectPool\Scripts\LICENSE.txt" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\drawable\common_signin_btn_icon_dark.xml" />
      <None Include="Assets\Plugins\Android\google-play-services_lib\res\values-de\common_strings.xml" />
      <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
@@ -214,8 +217,6 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{DDBF2BCB-11D1-BF7F-7A25-71D1DF05CBE4}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{C3DA89E1-70C6-7D6C-993E-C8F831D35880}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
