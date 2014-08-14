@@ -14,6 +14,8 @@ public  class ObstacleSpawnerPrefs : MonoBehaviour {
 				_instance=GameObject.FindObjectOfType<ObstacleSpawnerPrefs>();
 			return _instance;
 		}
+
+
 	}
 
 }

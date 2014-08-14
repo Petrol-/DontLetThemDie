@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource audioBackground;
 	public AudioSource audioJump;
 
+	//Persistent singleton
 	public static AudioManager instance{
 		get{
 			if(_instance == null){
@@ -36,6 +37,7 @@ public class AudioManager : MonoBehaviour {
 	}
 	// Use this for initialization
 	void Start () {
+		//load the playerPrefs
 		soundEnabled = PlayerPrefs.GetInt ("Sound", 1) == 1 ? true : false;
 		audioBackground.loop = loopBackgroundSound;
 	}
