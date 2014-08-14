@@ -12,12 +12,14 @@ public class ObstacleSpawnerScript : MonoBehaviour {
 
     void Start()
     {
+		//TODO ObstacleSpawnerPrefs should be a singleton!
 		ObstacleSpawnerPrefs prefs = FindObjectOfType<ObstacleSpawnerPrefs> ();
 		fixedDist = prefs.fixedDist;
 		maxRdmDist = prefs.maxRdmDist;
 		prefs = null;
         count = 0;
 		lastValue = 0;
+		//Preload 3 of each Obstacle so no instantiation will be needed
 		foreach (GameObject obj in obstacles) {
 			obj.CreatePool(3);
 				}

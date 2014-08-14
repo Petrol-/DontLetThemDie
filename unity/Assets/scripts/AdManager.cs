@@ -12,10 +12,10 @@ public class AdManager : MonoBehaviour {
 				get { return _interstitial;}
 		}
 
-	// Use this for initialization
 	void Start () {
+		//Load the RetryCounter
 		retryCounter = PlayerPrefs.GetInt ("RetryCounter", 0);
-		//if(WillShowAnAd())
+		//Request an Ad to give it time to load
 		RequestInterstitial ();
 	}
 
@@ -56,18 +56,17 @@ public class AdManager : MonoBehaviour {
 		//Debug.LogWarning ("Ad is loaded: "+_interstitial.IsLoaded());
 		if (_interstitial.IsLoaded())
 		{
+			//Show the ad and reset the counter
 			_interstitial.Show();
-			PlayerPrefs.SetInt("RetryCounter",0);
-		}
-		else
-		{
-		//	print("Interstitial is not ready yet.");
+			ResetRetryCounter();
 		}
 	}
+	//Increment the counter
 	public void IncrementRetryCounter(){
 		PlayerPrefs.SetInt ("RetryCounter", PlayerPrefs.GetInt ("RetryCounter", 0) + 1);
 		retryCounter++;
 		}
+	//Reset the counter
 	public void ResetRetryCounter(){
 		PlayerPrefs.SetInt ("RetryCounter", 0);
 		retryCounter = 0;
@@ -81,6 +80,8 @@ public class AdManager : MonoBehaviour {
 				}
 		return false;
 		}
+
+	//Handlers
 	public void HandleInterstitialLoaded(object sender, System.EventArgs args)
 	{
 		//print("HandleInterstitialLoaded event received.");

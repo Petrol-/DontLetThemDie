@@ -9,6 +9,7 @@ public class GroundSpawnerScript : MonoBehaviour {
 	void Start () {
         
         count = 0;
+		//preLoad 3 grounds with an object pooler
 		ground.CreatePool (3);
 	}
 	
@@ -26,6 +27,7 @@ public class GroundSpawnerScript : MonoBehaviour {
 
     private void Spawn()
     {
+		//spawn the ground where needed
 		ground.Spawn (new Vector3 (50 * (count + 1f), transform.position.y, 0f), Quaternion.identity);
         //Instantiate(ground, new Vector3(50 * (count+1f), transform.position.y, 0f), Quaternion.identity);
         

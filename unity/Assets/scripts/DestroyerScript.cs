@@ -8,6 +8,7 @@ public class DestroyerScript : MonoBehaviour {
     {
 		if (obj.tag == tagToDestroy)
 		//  Destroy(obj.gameObject);
+			//Recycle the object inside the object pooler
 		obj.Recycle ();
     }
 }
